@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calendar - Register</title>
+
+    <link href="/netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <img src="http://3.bp.blogspot.com/-SFCxw1AMHew/VJQaZwK2_BI/AAAAAAADA5M/VP2J1olOIag/s1600/user_add.png"
+                alt="Register" height="360px" width="360px">
+            <span class="glyphicon glyphicon-list-alt"></span>
+            <h2>Register</h2>
+            <div class="box">
+                <form action="/users" method="POST">
+                    <input type="text" name="name" placeholder="username">
+                    <input type="password" name="password" placeholder="password">
+
+                    <button type="submit" class="btn btn-default full-width">
+                        <span class="glyphicon glyphicon-ok">CONFIRM</span>
+                    </button>
+                </form>
+
+                <button onClick="location.href='http://localhost:3000/'" class="btn btn-default full-width">
+                    <span class="glyphicon glyphicon-ok">CANCEL</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
